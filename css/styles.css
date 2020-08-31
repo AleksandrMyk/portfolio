@@ -2,17 +2,16 @@ html {
   font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
-
-.main-section {
-  background-image: url(../img/b1.jpg);
+.section {
+  background-image: url(../img/b11.jpg);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  min-height: 100vh;
-  padding-top: 40px;
-  padding-bottom: 10px;
   text-align: center;
+  padding-top: 20px;
+  padding-bottom: 5px;
 }
+
 .intro,
 .introNative {
   font-size: 26px;
@@ -25,7 +24,6 @@ html {
   justify-content: center;
 }
 .items {
-  margin-right: 15px;
   margin-bottom: 15px;
 }
 .items-box {
@@ -64,13 +62,16 @@ html {
   margin-bottom: 7px;
   font-weight: 600;
 }
-
 .react {
   margin-bottom: 20px;
 }
 
+.foo {
+  padding: 20px 0;
+  background-color: rgb(48, 48, 48);
+}
 .links {
-  min-width: 150px;
+  width: 150px;
   margin: 0 auto;
   padding: 8px 16px;
   border-radius: 4px;
@@ -101,9 +102,73 @@ html {
   background-color: #5682a3;
 }
 
-.social {
-  display: flex;
-  flex-wrap: wrap;
-  width: 800px;
-  margin: 0 auto;
+@media (max-width: 599px) {
+  .main-section {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 0 auto;
+  }
+  .socBox {
+    display: flex;
+    margin: 0 auto;
+    width: 100%;
+  }
+  .social {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+  .links {
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 962px) {
+  .main-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .items {
+    margin-right: 8px;
+  }
+  .socBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .links {
+    margin-right: 8px;
+  }
+}
+
+@media (min-width: 963px) and (max-width: 1920px) {
+  .main-section {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 90%;
+    margin: 0 auto;
+  }
+  .items {
+    margin-right: 8px;
+  }
+  .socBox {
+    width: 90%;
+    margin: 0 auto;
+  }
+  .social {
+    display: flex;
+    flex-direction: row;
+    width: 900px;
+    margin: 0 auto;
+    justify-content: space-between;
+  }
 }
