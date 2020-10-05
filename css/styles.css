@@ -92,14 +92,38 @@ html {
 .linkedin {
   background-color: #0077b5;
 }
+.linkedin:hover {
+  background-color: #ffffff;
+  color: #0077b5;
+  font-weight: 700;
+  transition: all 400ms linear;
+}
 .mail {
   background-color: #c1392a;
+}
+.mail:hover {
+  background-color: #ffffff;
+  color: #c1392a;
+  font-weight: 700;
+  transition: all 400ms linear;
 }
 .whatsapp {
   background-color: #00e676;
 }
+.whatsapp:hover {
+  background-color: #ffffff;
+  color: #00e676;
+  font-weight: 700;
+  transition: all 400ms linear;
+}
 .telegram {
   background-color: #5682a3;
+}
+.telegram:hover {
+  background-color: #ffffff;
+  color: #5682a3;
+  font-weight: 700;
+  transition: all 400ms linear;
 }
 
 @media (max-width: 599px) {
