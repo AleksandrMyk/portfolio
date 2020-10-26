@@ -149,7 +149,7 @@ html {
   }
 }
 
-@media (min-width: 600px) and (max-width: 962px) {
+@media (min-width: 600px) and (max-width: 1279px) {
   .main-section {
     flex-direction: row;
     flex-wrap: wrap;
@@ -174,7 +174,7 @@ html {
   }
 }
 
-@media (min-width: 963px) and (max-width: 1920px) {
+@media (min-width: 1280px) and (max-width: 1920px) {
   .main-section {
     flex-direction: row;
     flex-wrap: wrap;
